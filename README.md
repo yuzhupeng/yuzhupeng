@@ -2,7 +2,7 @@
 
 [![example](https://img.shields.io/badge/My%20Blog-ResetRan-brightgreen)](https://resetran.top) &ensp;![visitors](https://visitor-badge.laobi.icu/badge?page_id=ranchongzhi.ranchongzhi)
 
-I am an undergraduate studying at [Xidian University](https://en.xidian.edu.cn/),My major is intelligent science and technology.
+I am an graduate   at [dongguanligongchengshixueyuan University](https://en.xidian.edu.cn/),My major is software engineering.
 
 🌱 **I currently learning:**
 
