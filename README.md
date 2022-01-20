@@ -1,6 +1,6 @@
  
 
-[![example](https://img.shields.io/badge/My%20Blog-ResetRan-brightgreen)](https://resetran.top) &ensp;![visitors](https://visitor-badge.laobi.icu/badge?page_id=ranchongzhi.ranchongzhi)
+[![example](https://img.shields.io/badge/%20fishyue-blog-yellow)](https://github.com/yuzhupeng/) &ensp;![visitors](https://visitor-badge.laobi.icu/badge?page_id=ranchongzhi.ranchongzhi)
 
  
 ### Hi there,I'm yuzhupeng👋
@@ -14,8 +14,8 @@ If you'd like to communicate with me, you can Email me.
 🌱 **I currently learning:**
 
 - Machine learning and deep learning
-- Pattern recognition
-- python
+- vue .net core 
+- python pytest OCR
 
 
 
