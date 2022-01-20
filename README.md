@@ -1,6 +1,6 @@
  
 
-[![example](https://img.shields.io/badge/%20fishyue-blog-yellow)](https://github.com/yuzhupeng/) &ensp;![visitors](https://visitor-badge.laobi.icu/badge?page_id=ranchongzhi.ranchongzhi)
+[![example](https://img.shields.io/badge/%20fishyue-blog-yellow)](https://github.com/yuzhupeng/) &ensp;![visitors](https://visitor-badge.laobi.icu/badge?page_id=fishyues)
 
  
 ### Hi there,I'm fishyue👋
