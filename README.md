@@ -1,8 +1,15 @@
-### Hi there,I'm yuzhupeng👋
+ 
 
 [![example](https://img.shields.io/badge/My%20Blog-ResetRan-brightgreen)](https://resetran.top) &ensp;![visitors](https://visitor-badge.laobi.icu/badge?page_id=ranchongzhi.ranchongzhi)
 
-I am an graduate   at [dongguanligongchengshixueyuan University](https://en.xidian.edu.cn/),My major is software engineering.
+ 
+### Hi there,I'm yuzhupeng👋
+
+I am an software developer in China.
+
+I aim to be a more pragmatic programmer. In my Blog, I will share some posts about life and programming skills.
+
+If you'd like to communicate with me, you can Email me.
 
 🌱 **I currently learning:**
 
