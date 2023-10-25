@@ -14,9 +14,10 @@ If you'd like to communicate with me, you can Email me.
 🌱 **I currently learning:**
 
 - Machine learning and deep learning
-- vue .net core 
+- vue
+- .net core 
 - python pytest OCR
-
+- game-reversed
 
 
 ## 今年汇总 ✨
