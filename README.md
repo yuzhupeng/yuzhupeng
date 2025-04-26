@@ -13,10 +13,10 @@ If you'd like to communicate with me, you can Email me.
 
 🌱 **I currently learning:**
 
-- Machine learning and deep learning
+- AI MCP Auto genercode 
 - vue
 - .net core 
-- python pytest OCR
+- python  
 - game-reversed
 
 
