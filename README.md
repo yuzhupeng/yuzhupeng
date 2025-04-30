@@ -1,29 +1,67 @@
- 
+[![fishyue Blog](https://img.shields.io/badge/Fishyue-Blog-yellow?style=flat-square&logo=ghost)](https://github.com/yuzhupeng/)
+![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=fishyues)
+![GitHub followers](https://img.shields.io/github/followers/yuzhupeng?style=social)
 
-[![example](https://img.shields.io/badge/%20fishyue-blog-yellow)](https://github.com/yuzhupeng/) &ensp;![visitors](https://visitor-badge.laobi.icu/badge?page_id=fishyues)
+# 👋 Hi, I'm **fishyue** | 你好，我是 **fishyue**
 
- 
-### Hi there,I'm fishyue👋
+🇨🇳 Full-stack Engineer | Digital Factory Evangelist  
+🎯 Software Developer from China | 一名来自中国的软件开发者  
+🌟 Sharing my journey on code, life, and tech  
+📫 Email me anytime | 有问题欢迎邮件联系  
 
-I am an software developer in China.
+---
 
-I aim to be a more pragmatic programmer. In my Blog, I will share some posts about life and programming skills.
+## 🚀 About Me | 关于我
 
-If you'd like to communicate with me, you can Email me.
+- 🔧 全栈工程师（Full-stack developer）
+- 🏭 数字化工厂布道者（Digital Factory Evangelist）
+- 💡 热爱探索编程、人工智能与逆向技术
+- 📚 坚持输出博客与开源项目，分享实用经验
+- 🌐 常用语言：`C#` `Python` `Vue` `JavaScript` `SQL` `Shell`
 
-🌱 **I currently learning:**
+---
 
-- AI MCP Auto genercode 
-- vue
-- .net core 
-- python  
-- game-reversed
+## 🌱 Currently Learning | 正在学习
 
+- 🤖 AI 自动代码生成（AI MCP Auto GenCode）
+- 🌐 Vue.js 前端开发
+- ⚙️ .NET Core 架构实践
+- 🐍 Python 高级应用
+- 🎮 游戏逆向工程（Game Reversed Engineering）
 
-## 今年汇总 ✨
+---
 
-<img align="" height="137px" src="https://github-readme-stats.vercel.app/api?username=yuzhupeng&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite&locale=cn" /><img align="" height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuzhupeng&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=cn" />
+## 📊 GitHub Stats
 
+<img align="" height="150px" src="https://github-readme-stats.vercel.app/api?username=yuzhupeng&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite" />
+<img align="" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuzhupeng&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite" />
 
-帮忙修改以下githup个人首页，实现中英文显示，并增加其他酷炫的描述，图标，githup其他酷炫的描述
-我是一名 全栈工程师，数字化工厂布道者
+---
+
+## 🎯 Cool Tools & Badges
+
+![VS Code](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code)
+![.NET Core](https://img.shields.io/badge/-.NETCore-5C2D91?style=flat-square&logo=dotnet)
+![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git)
+
+---
+
+## 🧠 Most Used Repos
+
+[![fishyue's repos](https://github-readme-stats.vercel.app/api/pin/?username=yuzhupeng&repo=your-repo-name&theme=tokyonight)](https://github.com/yuzhupeng/your-repo-name)
+[![fishyue's repos](https://github-readme-stats.vercel.app/api/pin/?username=yuzhupeng&repo=your-second-repo&theme=tokyonight)](https://github.com/yuzhupeng/your-second-repo)
+
+---
+
+## 🔗 Connect With Me | 联系我
+
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=flat-square&logo=github)](https://github.com/yuzhupeng)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+[![Blog](https://img.shields.io/badge/-Blog-yellow?style=flat-square&logo=ghost)](https://github.com/yuzhupeng/)
+
+---
+
+⭐️ From [fishyue](https://github.com/yuzhupeng)
