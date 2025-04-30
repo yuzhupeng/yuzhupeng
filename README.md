@@ -25,10 +25,10 @@
 
 - 🤖 AI 自动代码生成（AI MCP Auto GenCode）
 - 🌐 Vue.js 前端开发
-- ⚙️ .NET Core 架构实践
+- ⚙️ .NET Core 分布式 微服务 架构 
 - 🐍 Python 高级应用(OCR TensorFlow、PyTorch Pandas、NumPy、Matplotlib)
 - 🎮 游戏逆向工程（Game Reversed Engineering）
-
+- 🌱 java Spring Boot Maven 框架
 ---
 
 ## 📊 GitHub Stats
