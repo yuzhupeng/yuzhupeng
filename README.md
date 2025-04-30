@@ -17,7 +17,7 @@
 - 🏭 数字化工厂布道者（Digital Factory Evangelist）
 - 💡 热爱探索编程、人工智能与逆向技术
 - 📚 坚持输出博客与开源项目，分享实用经验
-- 🌐 常用语言：`C#` `Python` `Vue` `JavaScript` `SQL` `Shell`
+- 🌐 常用语言：`C#` `Python` `Vue` `JavaScript` `SQL` `Shell` `JAVA` 
 
 ---
 
@@ -26,7 +26,7 @@
 - 🤖 AI 自动代码生成（AI MCP Auto GenCode）
 - 🌐 Vue.js 前端开发
 - ⚙️ .NET Core 架构实践
-- 🐍 Python 高级应用
+- 🐍 Python 高级应用(OCR TensorFlow、PyTorch Pandas、NumPy、Matplotlib)
 - 🎮 游戏逆向工程（Game Reversed Engineering）
 
 ---
