@@ -2,12 +2,12 @@
 ![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=fishyues)
 ![GitHub followers](https://img.shields.io/github/followers/yuzhupeng?style=social)
 
-# 👋 Hi, I'm **fishyue** | 你好，我是 **fishyue**
+# 👋 Hi, I'm **fishyue** | 
 
 🇨🇳 Full-stack Engineer | Digital Factory Evangelist  
-🎯 Software Developer from China | 一名来自中国的软件开发者  
+🎯 Software Developer from China |  
 🌟 Sharing my journey on code, life, and tech  
-📫 Email me anytime | 有问题欢迎邮件联系  
+📫 Email me anytime |   
 
 ---
 
