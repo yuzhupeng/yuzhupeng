@@ -7,7 +7,7 @@
 🇨🇳 Full-stack Engineer | Digital Factory Evangelist  
 🎯 Software Developer from China |  
 🌟 Sharing my journey on code, life, and tech  
-📫 Email me anytime | hanifmonic@gmail.com 
+📫 Email me anytime | fishyue1@outlook.com 
 
 ---
 
