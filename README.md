@@ -25,7 +25,8 @@
 
 - 🤖 AI 自动代码生成（AI MCP Auto GenCode）&vibe coding
 - 🌐 Vue.js 前端开发
-- ⚙️ .NET Core 9
+- 🎮 Prompt Engineering
+- ⚙️ .NET Core 
 - 🐍 Python 高级应用(OCR TensorFlow、PyTorch Pandas、NumPy、Matplotlib)
 - 🎮 游戏逆向工程（Game Reversed Engineering）
 - 🌱 java Spring Boot Maven 框架
