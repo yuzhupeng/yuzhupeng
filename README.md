@@ -17,13 +17,13 @@
 - 🏭 数字化工厂布道者（Digital Factory Evangelist）
 - 💡 热爱探索编程、人工智能与逆向技术
 - 📚 坚持输出博客与开源项目，分享实用经验
-- 🌐 常用语言：`C#` `Python` `Vue` `JavaScript` `SQL` `Shell` `JAVA` 
+- 🌐 常用语言：`C#` `Python` `Vue` `JAVA` `SQL` `JavaScript` `Shell`  
 
 ---
 
 ## 🌱 Currently Learning | 正在学习
 
-- 🤖 AI 自动代码生成（AI MCP Auto GenCode）
+- 🤖 AI 自动代码生成（AI MCP Auto GenCode）&vibe coding
 - 🌐 Vue.js 前端开发
 - ⚙️ .NET Core 9
 - 🐍 Python 高级应用(OCR TensorFlow、PyTorch Pandas、NumPy、Matplotlib)
