@@ -1,5 +1,8 @@
 # Prompt Engineering Guide
 
+提示工程指南
+https://www.promptingguide.ai/zh
+
 <h5 align="center">
   Sponsored by&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://serpapi.com/"><img src="https://cdn.rawgit.com/standard/standard/master/docs/logos/serpapi.png" height=35 valign="middle"></a>
 </h5>
