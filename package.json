@@ -1,0 +1,17 @@
+{
+  "name": "yuzhupeng",
+  "version": "1.0.0",
+  "description": "[![fishyue Blog](https://img.shields.io/badge/Fishyue-Blog-yellow?style=flat-square&logo=ghost)](https://github.com/yuzhupeng/)\r ![Profile Views](https://visitor-badge.laobi.icu/badge?page_id=fishyues)\r ![GitHub followers](https://img.shields.io/github/followers/yuzhupeng?style=social)",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
