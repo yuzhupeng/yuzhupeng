@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "build": "chmod +x ./node_modules/.bin/vitepress && vitepress build docs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "vitepress": "^1.6.4"
   }
 }
