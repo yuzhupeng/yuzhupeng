@@ -11,7 +11,7 @@
 
 ---
 
-[![数字化工厂布道者](http://mmbiz.qpic.cn/mmbiz_png/5rzCc5bbejngMV9jrCogVN8RAg2vZggfRvNRt09zAOCVbAcrt5gNuezxTrTacHDRHhIpnereRPlwvmvDarwIhA/0?wx_fmt=png)](https://mp.weixin.qq.com/)  
+[![数字化工厂布道者]()  
 **数字化工厂布道者** | Digital Factory Evangelist
 
 ## 🚀 About Me | 关于我
