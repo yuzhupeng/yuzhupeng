@@ -12,7 +12,7 @@
 ---
 
 
- 
+ ## 🔗 Connect With Me | 联系我
 
 ![](https://raw.githubusercontent.com/yuzhupeng/yuzhupeng/refs/heads/main/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png)
 
@@ -50,19 +50,7 @@
 
 ---
 
-## 🧠 Most Used Repos
-
-[![fishyue's repos](https://github-readme-stats.vercel.app/api/pin/?username=yuzhupeng&repo=your-repo-name&theme=tokyonight)](https://github.com/yuzhupeng/your-repo-name)
-[![fishyue's repos](https://github-readme-stats.vercel.app/api/pin/?username=yuzhupeng&repo=your-second-repo&theme=tokyonight)](https://github.com/yuzhupeng/your-second-repo)
-
----
-
-## 🔗 Connect With Me | 联系我
-
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=flat-square&logo=github)](https://github.com/yuzhupeng)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:your-email@example.com)
-[![Blog](https://img.shields.io/badge/-Blog-yellow?style=flat-square&logo=ghost)](https://github.com/yuzhupeng/)
-
----
+ 
+ 
 
 ⭐️ From [fishyue](https://github.com/yuzhupeng)
