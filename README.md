@@ -20,7 +20,7 @@
 ## 🚀 About Me | 关于我
 
 - 🔧 全栈工程师（Full-stack developer）
-- 🏭 数字化工厂布道者（Digital Factory Evangelist）
+- 🏭 数字化工厂布道者（Digital Factory developer）
 - 💡 热爱探索编程、人工智能与逆向技术
 - 📚 坚持输出博客与开源项目，分享实用经验
 - 🌐 常用语言：`C#` `Python` `Vue` `JAVA` `SQL` `JavaScript` `Shell`  
