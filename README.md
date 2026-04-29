@@ -23,13 +23,13 @@
 - 💡 热爱探索编程、人工智能与逆向技术
 - 📚 坚持输出博客与开源项目，分享实用经验
 - 🌐 常用语言：`C#` `Python` `Vue` `JAVA` `SQL` `JavaScript` `Shell`  
-- 🤖 AI:精通 `Claude code` `mcp` `skills`
+- 🤖 AI:精通 `Claude code` `mcp` `skills` `agent`
 ---
 
 ## 🌱 Currently Learning | 正在学习
 
 - 🤖 AI 自动代码生成（AI MCP Auto GenCode）&`vibe coding`&`Claude code`
-- 🌐 Vue.js 前端开发
+- 🌐 Agent ReAct / LangGraph / CrewAI
 - 🎮 Prompt Engineering
 - ⚙️ .NET Core 
 - 🐍 Python 高级应用(OCR TensorFlow、PyTorch Pandas、NumPy、Matplotlib)
