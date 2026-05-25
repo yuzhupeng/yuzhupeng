@@ -1,0 +1,10 @@
+{
+  "buildCommand": "vitepress build",
+  "outputDirectory": ".vitepress/dist",
+  "framework": "vitepress",
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}

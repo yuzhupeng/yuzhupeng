@@ -1,6 +1,10 @@
 import { defineConfig } from 'vitepress'
 
+// GitHub Pages base path (仓库名作为 base)
+const base = process.env.GITHUB_ACTIONS ? '/yuzhupeng/' : '/'
+
 export default defineConfig({
+  base,
   title: 'Yuzhupeng 知识库',
   description: '个人技术文档与笔记',
   lang: 'zh-CN',
@@ -21,7 +25,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'Prompt', link: '/prompt/' },
-      { text: 'C#', link: '/C#/' },
+      { text: 'C#', link: '/Csharp/.NET Core' },
       { text: 'Python', link: '/Python/' }
     ],
 
@@ -31,7 +35,7 @@ export default defineConfig({
           text: '技术笔记',
           items: [
             { text: 'Git飞行规则', link: '/Git飞行规则' },
-            { text: 'C# 数据类型', link: '/C# 数据类型' },
+            { text: 'C# 数据类型', link: '/Csharp 数据类型' },
             { text: 'RocketMQ', link: '/RocketMQ' },
             { text: '缓存与数据库一致性', link: '/如何解决缓存和数据库一致性的问题' },
             { text: '工业设备监测算法', link: '/工业设备监测中的常用机器学习算法' }
@@ -55,7 +59,7 @@ export default defineConfig({
           text: 'C# / .NET',
           collapsed: true,
           items: [
-            { text: '.NET Core', link: '/C#/.NET/.NET Core' }
+            { text: '.NET Core', link: '/Csharp/.NET Core' }
           ]
         },
         {
