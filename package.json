@@ -7,7 +7,9 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "build": "chmod +x ./node_modules/.bin/vitepress && vitepress build docs"
+    "build": "vitepress build",
+    "update-index": "python scripts/update-index-stats.py",
+    "build:full": "python scripts/update-index-stats.py && vitepress build"
   },
   "keywords": [],
   "author": "",
