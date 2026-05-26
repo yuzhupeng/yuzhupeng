@@ -33,3 +33,42 @@ features:
     details: 项目配置、Agent 定义、学习资源、工具链接等 5 篇
     link: /索引#f-项目配置与杂项-5-篇
 ---
+
+<style>
+/* 将关注横幅移到 hero 与 features 之间 */
+.VPHome {
+  display: flex;
+  flex-direction: column;
+}
+.VPHomeHero { order: 1; }
+.VPHome .vp-doc { order: 2; }
+.VPHomeFeatures { order: 3; }
+
+.follow-banner {
+  margin: 0 auto 2.5rem;
+  max-width: 680px;
+  width: 100%;
+  padding: 0 24px;
+}
+.follow-banner .banner-img {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+  line-height: 0;
+}
+.follow-banner .banner-img:hover {
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+}
+.follow-banner .banner-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
+
+<div class="follow-banner">
+  <div class="banner-img">
+    <img src="./qrcode-banner.png" alt="关注公众号" />
+  </div>
+</div>
