@@ -14,7 +14,7 @@ Codex 用的是 OpenAI 的 Responses API，火山方舟兼容的是 Chat Complet
 
 Codex 连不上国产模型，根子在 API 协议。目前主流的有三套。
 
-![三种接口对比图](https://img2024.cnblogs.com/blog/44814/202605/44814-20260527004302481-55229758.png)
+![三种接口对比图](https://camo.githubusercontent.com/40294c072d2f9930b1b7bbc9a167a8555bd3c7d2fd1661470a5c493ea3636773/68747470733a2f2f696d67323032342e636e626c6f67732e636f6d2f626c6f672f34343831342f3230323630352f34343831342d32303236303532373030343330323438312d35353232393735382e706e67)
 
 ### OpenAI Chat Completions：国产模型的门槛
 
