@@ -45,7 +45,7 @@
 - ⚙️ .NET Core 
 - 🐍 Python 高级应用(OCR TensorFlow、PyTorch Pandas、NumPy、Matplotlib)
 - 🎮 游戏逆向工程（Game Reversed Engineering）
-- 🌱 
+- 🌱 TypeScript
 ---
 
 
