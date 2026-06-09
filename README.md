@@ -50,15 +50,14 @@
 
 
 ## 🎯 Cool Tools & Badges
-![cow agent]
-![claude code]
-![VS Code](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code)
+![cow agent](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=cow agent)
+![claude code](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=claude code)
 ![.NET Core](https://img.shields.io/badge/-.NETCore-5C2D91?style=flat-square&logo=dotnet)
 ![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git)
-
+![java](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=java)
 ---
 
  
