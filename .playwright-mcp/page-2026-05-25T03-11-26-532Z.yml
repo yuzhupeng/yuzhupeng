@@ -1,0 +1,73 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#VPContent"
+  - banner:
+    - generic:
+      - generic:
+        - generic:
+          - link "Yuzhupeng 知识库" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7]: Yuzhupeng 知识库
+          - generic [ref=e8]:
+            - button "Search" [ref=e11] [cursor=pointer]:
+              - generic [ref=e14]: Search
+              - generic [ref=e15]:
+                - generic [ref=e16]: Ctrl
+                - generic [ref=e17]: K
+            - navigation "Main Navigation" [ref=e18]:
+              - generic [ref=e19]: Main Navigation
+              - link "首页" [ref=e20] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e21]: 首页
+              - link "Prompt" [ref=e22] [cursor=pointer]:
+                - /url: /AI与ClaudeCode/prompt/
+                - generic [ref=e23]: Prompt
+              - link "C#" [ref=e24] [cursor=pointer]:
+                - /url: /%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91/Csharp/.NET%20Core.html
+                - generic [ref=e25]: C#
+              - link "Python" [ref=e26] [cursor=pointer]:
+                - /url: /%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91/Python%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%88%A9%E5%99%A8Conda.html
+                - generic [ref=e27]: Python
+            - button "extra navigation" [ref=e29] [cursor=pointer]
+  - generic [ref=e32]:
+    - generic [ref=e35]:
+      - heading "Yuzhupeng 个人知识库" [level=1] [ref=e36]:
+        - generic [ref=e37]: Yuzhupeng
+        - generic [ref=e38]: 个人知识库
+      - paragraph [ref=e39]: 技术笔记 · AI & Prompt · 健康养生 · 个人成长 · 投资财务
+      - generic [ref=e40]:
+        - link "完整索引" [ref=e42] [cursor=pointer]:
+          - /url: /%E7%B4%A2%E5%BC%95.html
+        - link "GitHub" [ref=e44] [cursor=pointer]:
+          - /url: https://github.com/yuzhupeng
+    - generic [ref=e47]:
+      - link [ref=e49] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#c-%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91-20-%E7%AF%87
+        - article [ref=e50]:
+          - heading "💻 技术开发" [level=2] [ref=e51]
+          - paragraph [ref=e52]: C#/.NET、消息队列、数据库、多线程、Git、字符编码等 20 篇
+      - link [ref=e54] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#b-ai-%E4%B8%8E-claude-code-21-%E7%AF%87-prompt-%E5%AD%90%E7%9B%AE%E5%BD%95-9-%E7%AF%87
+        - article [ref=e55]:
+          - heading "🤖 AI 与 Claude Code" [level=2] [ref=e56]
+          - paragraph [ref=e57]: Claude Code 指南、Agent 协作、Prompt 工程、大模型 API 等 30 篇
+      - link [ref=e59] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#d-%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%85%BB%E7%94%9F-18-%E7%AF%87
+        - article [ref=e60]:
+          - heading "💪 健康与养生" [level=2] [ref=e61]
+          - paragraph [ref=e62]: 断食代谢、抗衰老、营养学、甲状腺、程序员健康等 18 篇
+      - link [ref=e64] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#a-%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%E4%B8%8E%E4%BA%BA%E7%94%9F%E5%93%B2%E5%AD%A6-15-%E7%AF%87
+        - article [ref=e65]:
+          - heading "🧠 个人成长与人生哲学" [level=2] [ref=e66]
+          - paragraph [ref=e67]: 年度总结、认知破局、金钱心理学、读书处世等 15 篇
+      - link [ref=e69] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#e-%E6%8A%95%E8%B5%84%E4%B8%8E%E8%B4%A2%E5%8A%A1-1-%E7%AF%87
+        - article [ref=e70]:
+          - heading "📈 投资与财务" [level=2] [ref=e71]
+          - paragraph [ref=e72]: 现金流分析、投资哲学
+      - link [ref=e74] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#f-%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%9D%82%E9%A1%B9-5-%E7%AF%87
+        - article [ref=e75]:
+          - heading "🔧 其他" [level=2] [ref=e76]
+          - paragraph [ref=e77]: 项目配置、Agent 定义、学习资源、工具链接等 5 篇

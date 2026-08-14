@@ -1,0 +1,5 @@
+[  111987ms] [ERROR] Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://localhost:5173/AI%E4%B8%8EClaudeCode/prompt/index.md?import&t=1779678797751:0
+[  282097ms] [ERROR] Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec. @ http://localhost:5173/AI%E4%B8%8EClaudeCode/prompt/index.md?import&t=1779678967864:0
+[12975787ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5173/@vite/client:559
+[12978197ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:5173/:0
+[12979942ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/.vitepress/theme/index.ts:0

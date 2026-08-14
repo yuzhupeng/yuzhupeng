@@ -1,0 +1,82 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#VPContent"
+  - banner:
+    - generic:
+      - generic:
+        - generic:
+          - link "fishyue 知识库" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7]: fishyue 知识库
+          - generic [ref=e8]:
+            - button "Search" [ref=e11] [cursor=pointer]:
+              - generic [ref=e14]: Search
+              - generic [ref=e15]:
+                - generic [ref=e16]: Ctrl
+                - generic [ref=e17]: K
+            - navigation "Main Navigation" [ref=e18]:
+              - generic [ref=e19]: Main Navigation
+              - link "首页" [ref=e20] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e21]: 首页
+              - link "全部索引" [ref=e22] [cursor=pointer]:
+                - /url: /%E7%B4%A2%E5%BC%95.html
+                - generic [ref=e23]: 全部索引
+              - link "Prompt" [ref=e24] [cursor=pointer]:
+                - /url: /AI%E4%B8%8EClaudeCode/prompt/Prompt%20Engineering%20Guide.html
+                - generic [ref=e25]: Prompt
+              - link "C#" [ref=e26] [cursor=pointer]:
+                - /url: /%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91/Csharp/.NET%20Core.html
+                - generic [ref=e27]: C#
+              - link "Python" [ref=e28] [cursor=pointer]:
+                - /url: /%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91/Python%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%88%A9%E5%99%A8Conda.html
+                - generic [ref=e29]: Python
+            - switch "Switch to dark theme" [ref=e31] [cursor=pointer]
+            - link "github" [ref=e37] [cursor=pointer]:
+              - /url: https://github.com/yuzhupeng
+  - generic [ref=e40]:
+    - generic [ref=e43]:
+      - heading "fishyue 个人知识库" [level=1] [ref=e44]:
+        - generic [ref=e45]: fishyue
+        - generic [ref=e46]: 个人知识库
+      - paragraph [ref=e47]: 技术笔记 · AI & Prompt · 健康养生 · 个人成长 · 投资财务
+      - generic [ref=e48]:
+        - link "完整索引" [ref=e50] [cursor=pointer]:
+          - /url: /%E7%B4%A2%E5%BC%95.html
+        - link "GitHub" [ref=e52] [cursor=pointer]:
+          - /url: https://github.com/yuzhupeng
+    - generic [ref=e55]:
+      - link [ref=e57] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#c-%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91-22-%E7%AF%87
+        - article [ref=e58]:
+          - heading "💻 技术开发" [level=2] [ref=e59]
+          - paragraph [ref=e60]: C#/.NET、消息队列、数据库、多线程、Git、字符编码等 22 篇
+      - link [ref=e62] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#b-ai-%E4%B8%8E-claude-code-27-%E7%AF%87-prompt-%E5%AD%90%E7%9B%AE%E5%BD%95-9-%E7%AF%87
+        - article [ref=e63]:
+          - heading "🤖 AI 与 Claude Code" [level=2] [ref=e64]
+          - paragraph [ref=e65]: Claude Code 指南、Agent 协作、Prompt 工程、大模型 API 等 27 篇
+      - link [ref=e67] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#d-%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%85%BB%E7%94%9F-20-%E7%AF%87
+        - article [ref=e68]:
+          - heading "💪 健康与养生" [level=2] [ref=e69]
+          - paragraph [ref=e70]: 断食代谢、抗衰老、营养学、甲状腺、程序员健康等 20 篇
+      - link [ref=e72] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#a-%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%E4%B8%8E%E4%BA%BA%E7%94%9F%E5%93%B2%E5%AD%A6-18-%E7%AF%87
+        - article [ref=e73]:
+          - heading "🧠 个人成长与人生哲学" [level=2] [ref=e74]
+          - paragraph [ref=e75]: 年度总结、认知破局、金钱心理学、读书处世等 18 篇
+      - link [ref=e77] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#e-%E6%8A%95%E8%B5%84%E4%B8%8E%E8%B4%A2%E5%8A%A1-1-%E7%AF%87
+        - article [ref=e78]:
+          - heading "📈 投资与财务" [level=2] [ref=e79]
+          - paragraph [ref=e80]: 现金流分析、投资哲学
+      - link [ref=e82] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#f-%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%9D%82%E9%A1%B9-5-%E7%AF%87
+        - article [ref=e83]:
+          - heading "🔧 其他" [level=2] [ref=e84]
+          - paragraph [ref=e85]: 项目配置、Agent 定义、学习资源、工具链接等 5 篇
+    - generic [ref=e89]:
+      - img "公众号二维码" [ref=e92]
+      - generic [ref=e93]: 📢 关注公众号
+      - generic [ref=e94]: 扫码关注，获取最新文章推送

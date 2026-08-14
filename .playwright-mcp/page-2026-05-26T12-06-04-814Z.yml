@@ -1,0 +1,61 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#VPContent"
+  - banner:
+    - generic:
+      - generic:
+        - generic:
+          - link "fishyue 知识库" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7]: fishyue 知识库
+          - generic [ref=e8]:
+            - button "Search" [ref=e11] [cursor=pointer]: Ctrl
+            - button "mobile navigation" [ref=e14] [cursor=pointer]
+  - generic [ref=e20]:
+    - generic [ref=e23]:
+      - heading "fishyue 个人知识库" [level=1] [ref=e24]:
+        - generic [ref=e25]: fishyue
+        - generic [ref=e26]: 个人知识库
+      - paragraph [ref=e27]: 技术笔记 · AI & Prompt · 健康养生 · 个人成长 · 投资财务
+      - generic [ref=e28]:
+        - link "完整索引" [ref=e30] [cursor=pointer]:
+          - /url: /%E7%B4%A2%E5%BC%95.html
+        - link "GitHub" [ref=e32] [cursor=pointer]:
+          - /url: https://github.com/yuzhupeng
+    - generic [ref=e35]:
+      - link [ref=e37] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#c-%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91-22-%E7%AF%87
+        - article [ref=e38]:
+          - heading "💻 技术开发" [level=2] [ref=e39]
+          - paragraph [ref=e40]: C#/.NET、消息队列、数据库、多线程、Git、字符编码等 22 篇
+      - link [ref=e42] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#b-ai-%E4%B8%8E-claude-code-27-%E7%AF%87-prompt-%E5%AD%90%E7%9B%AE%E5%BD%95-9-%E7%AF%87
+        - article [ref=e43]:
+          - heading "🤖 AI 与 Claude Code" [level=2] [ref=e44]
+          - paragraph [ref=e45]: Claude Code 指南、Agent 协作、Prompt 工程、大模型 API 等 27 篇
+      - link [ref=e47] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#d-%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%85%BB%E7%94%9F-20-%E7%AF%87
+        - article [ref=e48]:
+          - heading "💪 健康与养生" [level=2] [ref=e49]
+          - paragraph [ref=e50]: 断食代谢、抗衰老、营养学、甲状腺、程序员健康等 20 篇
+      - link [ref=e52] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#a-%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%E4%B8%8E%E4%BA%BA%E7%94%9F%E5%93%B2%E5%AD%A6-18-%E7%AF%87
+        - article [ref=e53]:
+          - heading "🧠 个人成长与人生哲学" [level=2] [ref=e54]
+          - paragraph [ref=e55]: 年度总结、认知破局、金钱心理学、读书处世等 18 篇
+      - link [ref=e57] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#e-%E6%8A%95%E8%B5%84%E4%B8%8E%E8%B4%A2%E5%8A%A1-1-%E7%AF%87
+        - article [ref=e58]:
+          - heading "📈 投资与财务" [level=2] [ref=e59]
+          - paragraph [ref=e60]: 现金流分析、投资哲学
+      - link [ref=e62] [cursor=pointer]:
+        - /url: /%E7%B4%A2%E5%BC%95.html#f-%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%9D%82%E9%A1%B9-5-%E7%AF%87
+        - article [ref=e63]:
+          - heading "🔧 其他" [level=2] [ref=e64]
+          - paragraph [ref=e65]: 项目配置、Agent 定义、学习资源、工具链接等 5 篇
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img "关注公众号"
