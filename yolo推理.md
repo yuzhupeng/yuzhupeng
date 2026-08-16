@@ -1,3 +1,9 @@
+vision:
+  mob_detector: yolo
+  yolo_model: weights/best.pt
+  yolo_confidence: 0.6
+
+
 训练完成！ONNX CPU 推理 52.6ms/帧，远低于 125ms 预算，AMD 游戏机完全够用。
 
   结果汇总
