@@ -7,9 +7,10 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "build": "vitepress build",
+    "docs:check": "node scripts/check-docs.mjs",
+    "build": "node scripts/check-docs.mjs && vitepress build",
     "update-index": "python scripts/update-index-stats.py",
-    "build:full": "python scripts/update-index-stats.py && vitepress build"
+    "build:full": "python scripts/update-index-stats.py && node scripts/check-docs.mjs && vitepress build"
   },
   "keywords": [],
   "author": "",
