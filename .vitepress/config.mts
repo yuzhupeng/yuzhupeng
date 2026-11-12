@@ -56,6 +56,8 @@ export default defineConfig({
                 { text: "十条第一性原理决定人生上限", link: "/个人成长/十条第一性原理决定人生上限" },
                 { text: "人生回报率最高的几件小事", link: "/个人成长/人生回报率最高的几件小事" },
                 { text: "你需要感到无聊", link: "/个人成长/你需要感到无聊" },
+                { text: "我们仍缺乏野心", link: "/个人成长/我们仍缺乏野心" },
+                { text: "从底层思维到高效行动", link: "/个人成长/从底层思维到高效行动，顶尖人才进阶核心修炼指南" },
               ],
             },
             {
@@ -69,6 +71,8 @@ export default defineConfig({
                 { text: "芒格推荐的48本书", link: "/个人成长/巴菲特的搭档查理芒格推荐的48本书" },
                 { text: "为什么不要轻易讨论价值观", link: "/个人成长/為什麼不要輕易和身邊的人討論價值觀或深刻話題" },
                 { text: "《思考，快与慢》", link: "/book/《思考，快与慢》" },
+                { text: "《学习的真相》系统化总结", link: "/个人成长/《学习的真相》系统化总结" },
+                { text: "《战士准则》", link: "/个人成长/《战士准则》" },
               ],
             },
             {
@@ -79,6 +83,7 @@ export default defineConfig({
                 { text: "技术管理工作", link: "/个人成长/技术管理工作" },
                 { text: "文章", link: "/个人成长/文章" },
                 { text: "文章生产系统", link: "/个人成长/文章生产系统" },
+                { text: "书籍总结 Prompt 模板", link: "/个人成长/书籍总结prompt" },
               ],
             },
           ],
@@ -101,6 +106,9 @@ export default defineConfig({
                 { text: "Claudecode 工程提示词", link: "/AI与ClaudeCode/claudecode工程提示词" },
                 { text: "为什么要写 CLAUDE.md", link: "/AI与ClaudeCode/为什么要写 CLAUDE.md它的作用" },
                 { text: "效率工具全套配置分享", link: "/AI与ClaudeCode/我的 Claude Code 效率工具全套配置分享" },
+                { text: "10 个 Token 优化工具", link: "/AI与ClaudeCode/10 个 Token 优化工具，帮你省下大量 Claude API 成本" },
+                { text: "Codex 接入国产大模型", link: "/AI与ClaudeCode/codex安装" },
+                { text: "工程项目专用提问技巧", link: "/AI与ClaudeCode/Claude Code 开发Agent/工程项目专用提问技巧+全套提示词模板" },
               ],
             },
             {
@@ -111,6 +119,15 @@ export default defineConfig({
                 { text: "未来最值钱的能力", link: "/AI与ClaudeCode/未来最值钱的能力：你能指挥多少Agent替你干活" },
                 { text: "Skills的最正确用法", link: "/AI与ClaudeCode/Skills的最正确用法，是将整个Github压缩成你自己的超级技能库" },
                 { text: "最新Agent知识点", link: "/AI与ClaudeCode/最新Agent知识点" },
+                { text: "Agent 17 种架构模式", link: "/AI与ClaudeCode/Agent 17 种架构模式" },
+                { text: "Agent 架构", link: "/AI与ClaudeCode/Agent 架构" },
+                { text: "Agent 的常见范式", link: "/AI与ClaudeCode/Agent 的常见范式" },
+                { text: "Agent Harness + 状态机 + 链表", link: "/AI与ClaudeCode/Agent Harness + 状态机 + 链表 " },
+                { text: "Loop Engineering", link: "/AI与ClaudeCode/Loop Engineering " },
+                { text: "主流 AI 编程助手的记忆系统", link: "/AI与ClaudeCode/主流 AI 编程助手的记忆系统实现方案" },
+                { text: "如何写出好的 Skill", link: "/AI与ClaudeCode/如何写出好的 Skill " },
+                { text: "我的第一个 Skill", link: "/AI与ClaudeCode/我的第一个 Skill" },
+                { text: "使用智能体和创建智能体", link: "/AI与ClaudeCode/使用智能体和创建智能体" },
               ],
             },
             {
@@ -124,6 +141,14 @@ export default defineConfig({
                 { text: "我的AI自学路线", link: "/AI与ClaudeCode/我的AI自学路线" },
                 { text: "长期稳定大模型API厂商", link: "/AI与ClaudeCode/长期稳定大模型api的厂商和平台" },
                 { text: "程序员最常用的10个AI提示词", link: "/AI与ClaudeCode/程序员最常用的10个AI提示词" },
+                { text: "AI 7 个基本要素", link: "/AI与ClaudeCode/AI 7个基本要素" },
+                { text: "LLM 零基础科普", link: "/AI与ClaudeCode/LLM零基础科普知识点讲解" },
+                { text: "成为 AI 智能体工程师的 10 个步骤", link: "/AI与ClaudeCode/成为 AI 智能体工程师的 10 个步骤" },
+                { text: "我的 AI 开发心得", link: "/AI与ClaudeCode/我的 AI 开发心得" },
+                { text: "未来十年最吃香的12个职业", link: "/AI与ClaudeCode/未来十年最吃香的12个职业" },
+                { text: "10 个 AI Agent Skill 市场对比", link: "/AI与ClaudeCode/10 个主流 AI Agent Skill 市场平台横向对比：Clawhub、Skillsmp、SkillHub 哪家强？" },
+                { text: "普通人和中小企业搭建 AI 知识库", link: "/AI与ClaudeCode/一文讲清楚，普通人和中小企业如何搭建AI知识库" },
+                { text: "top 10 agent rep", link: "/AI与ClaudeCode/top 10 agent rep" },
               ],
             },
             {
@@ -204,6 +229,9 @@ export default defineConfig({
                 { text: "工业设备监测机器学习算法", link: "/技术开发/工业设备监测中的常用机器学习算法" },
                 { text: "mysqlmcp", link: "/技术开发/mysqlmcp" },
                 { text: "个人能力总结", link: "/技术开发/个人能力总结" },
+                { text: "大厂 Git 提交规范", link: "/技术开发/大厂git提交规范" },
+                { text: "如何避免订单重复提交", link: "/技术开发/如何避免订单重复提交" },
+                { text: "扫码登录的实现原理", link: "/技术开发/扫码登录的实现原理" },
               ],
             },
             {
@@ -219,6 +247,7 @@ export default defineConfig({
               items: [
                 { text: "ASCII、Unicode、UTF-8 详细说明", link: "/技术开发/计算机基础/ASCII、Unicode、UTF-8 详细说明" },
                 { text: "字符编码知多少", link: "/技术开发/计算机基础/字符编码知多少" },
+                { text: "软考架构设计师知识点总结", link: "/技术开发/计算机基础/软考 - 架构设计师 知识点总结" },
               ],
             },
             {
@@ -252,6 +281,8 @@ export default defineConfig({
                 { text: "30岁男性保养", link: "/健康养生/30岁男性保养" },
                 { text: "洗发水骗局", link: "/健康养生/洗发水骗局：摧毁发质、引发脱发的日化工业真相全解析" },
                 { text: "广东东莞地区食补策略", link: "/健康养生/广东东莞地区食补策略" },
+                { text: "逆转白发", link: "/健康养生/逆转白发的简单方法（有科学依据）" },
+                { text: "线粒体、能量抵抗与衰老疾病", link: "/健康养生/《线粒体、能量抵抗与人体衰老、疾病》完整结构化系统总结" },
               ],
             },
             {
@@ -262,6 +293,9 @@ export default defineConfig({
                 { text: "细胞如何维持酸碱平衡", link: "/健康养生/细胞如何维持酸碱平衡" },
                 { text: "智齿的由来与拔除决策", link: "/健康养生/智齿的由来与拔除决策" },
                 { text: "个人基因分析", link: "/健康养生/个人基因分析" },
+                { text: "原生家庭性格分析", link: "/健康养生/原生家庭性格分析" },
+                { text: "肝病能否吃水果", link: "/健康养生/肝功能不佳是否应当不吃水果：现代营养学 + 中国现实环境 + 生物进化视角系统化分析" },
+                { text: "鼻炎恢复方案", link: "/健康养生/鼻炎恢复方案" },
               ],
             },
             {
@@ -298,6 +332,8 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: "resource", link: "/其他/resource" },
+                { text: "Codex + Hyperframes 拆解抖音爆款", link: "/Vedio/Codex + Hyperframes：拆解抖音爆款 - 吃上自媒体这碗饭" },
+                { text: "YOLO11n ONNX 推理与部署", link: "/yolo推理" },
             { text: "地址", link: "/其他/地址" },
             { text: "product-strategy-expert", link: "/其他/product-strategy-expert" },
             { text: "openclaw记忆系统", link: "/其他/openclaw记忆系统" },
