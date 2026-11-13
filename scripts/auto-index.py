@@ -30,12 +30,13 @@ EXCLUDE_ROOT_FILES = {"README.md", "index.md", "索引.md", "Claude.md"}
 # 顶层目录 → 索引分区标题前缀
 SECTION_BY_DIR = {
     "个人成长": "## A.",
+    "心理学": "## A.",
+    "book": "## A.",
     "AI与ClaudeCode": "## B.",
     "技术开发": "## C.",
     "健康养生": "## D.",
     "投资财务": "## E.",
     "其他": "## F.",
-    "book": "## A.",
     "Vedio": "## F.",
     "": "## F.",  # 根目录文档归入杂项
 }
@@ -76,18 +77,42 @@ def doc_title(path: Path) -> str:
 
 
 def first_paragraph(path: Path) -> str:
-    """取首个有效正文段落作为摘要（去 markdown 标记、截断）。
+    """提取摘要：优先用文章自带的「摘要」小节，其次首个有效正文段落。
 
-    仅在 --auto-summary 时使用；默认留占位符，因为机摘质量不足以直接发布。
+    仅在 --auto-summary 时使用。
     """
-    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+    try:
+        lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError:
+        return ""
+
+    # 1) 优先找「## 摘要」小节下的首段
+    for i, line in enumerate(lines):
+        if re.match(r"^#{1,3}\s*摘要\s*$", line.strip()):
+            for follow in lines[i + 1:]:
+                s = follow.strip()
+                if not s or s.startswith(("#", ">", "|", "```")):
+                    if s.startswith("##"):
+                        break
+                    continue
+                return cleanup(s)[:45]
+            break
+
+    # 2) 回退：首个非标题、非引用、非图片的正文行
+    for line in lines:
         s = line.strip()
         if not s or s.startswith(("#", ">", "|", "-", "*", "!", "`", "---")):
             continue
-        s = re.sub(r"[*_`\[\]]", "", s)
-        s = re.sub(r"\([^)]*\)", "", s)
-        return s[:45]
+        return cleanup(s)[:45]
     return ""
+
+
+def cleanup(text: str) -> str:
+    """去掉 markdown 强调/链接标记，压成一行。"""
+    s = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", text)
+    s = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", s)
+    s = re.sub(r"[*_`]", "", s)
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def url_encode(rel: str) -> str:

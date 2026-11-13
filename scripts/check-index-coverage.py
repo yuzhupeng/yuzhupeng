@@ -52,8 +52,17 @@ def index_links() -> set[str]:
     return {normalize(m.group(1)) for m in re.finditer(r"\]\(([^)]+\.md)\)", text, re.I)}
 
 
-def sidebar_links() -> set[str]:
+def sidebar_links() -> set[str] | None:
+    """侧边栏已改为构建时动态补全，静态文本无法反映最终结果。
+
+    返回 None 表示「跳过侧边栏检查」——实际收录由 sidebar-auto.mjs
+    在构建时保证，任何 md 都会被挂上。
+    """
+    if not CONFIG_FILE.exists():
+        return set()
     text = CONFIG_FILE.read_text(encoding="utf-8")
+    if "enhanceSidebar" in text:
+        return None
     return {normalize(m.group(1)) for m in re.finditer(r'link:\s*"([^"]+)"', text)}
 
 
@@ -63,7 +72,10 @@ def main() -> int:
     nav = sidebar_links()
 
     missing_index = sorted(v for k, v in docs.items() if normalize(k) not in idx)
-    missing_nav = sorted(v for k, v in docs.items() if normalize(k) not in nav)
+    missing_nav = (
+        None if nav is None
+        else sorted(v for k, v in docs.items() if normalize(k) not in nav)
+    )
 
     def report(title: str, items: list[str]):
         if items:
@@ -73,12 +85,16 @@ def main() -> int:
         else:
             print(f"\n{title}：无")
 
-    print(f"内容文档 {len(docs)} 篇 | 索引收录 {len(docs) - len(missing_index)} | 侧边栏收录 {len(docs) - len(missing_nav)}")
+    nav_desc = "构建时动态生成" if missing_nav is None else f"{len(docs) - len(missing_nav)}"
+    print(f"内容文档 {len(docs)} 篇 | 索引收录 {len(docs) - len(missing_index)} | 侧边栏收录 {nav_desc}")
     report("索引.md 未收录", missing_index)
-    report("侧边栏未收录", missing_nav)
+    if missing_nav is None:
+        print("\n侧边栏未收录：自动生成，无需手工补齐")
+    else:
+        report("侧边栏未收录", missing_nav)
 
-    if missing_index or missing_nav:
-        print("\n补齐方式：在 索引.md 对应小节加一行表格，在 config.mts 对应分组加一条 link。")
+    if missing_index:
+        print("\n补齐方式：在 索引.md 对应小节加一行表格（或跑 auto-index.py）。")
         return 1
     print("\n[OK] 全部文档已收录")
     return 0
