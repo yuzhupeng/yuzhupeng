@@ -41,6 +41,11 @@ jobs:
       - name: Auto-add new docs to index
         run: python3 scripts/auto-index.py --write --auto-summary
 
+      # 覆盖率检查不阻断构建：缺收录时 auto-index 已自动补行，这里只把
+      # 「还需人工润色」的文件名打到日志里，便于事后补摘要与关键词。
+      - name: Index coverage report
+        run: python3 scripts/check-ci-coverage.py || true
+
       - name: Validate Markdown
         run: npm run docs:check
 

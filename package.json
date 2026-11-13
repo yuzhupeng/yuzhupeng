@@ -8,7 +8,7 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "docs:check": "node scripts/check-docs.mjs",
-    "docs:coverage": "python scripts/check-index-coverage.py",
+    "docs:coverage": "python scripts/check-index-coverage.py && python scripts/check-ci-coverage.py",
     "build": "node scripts/check-docs.mjs && vitepress build",
     "update-index": "python scripts/update-index-stats.py",
     "build:full": "python scripts/update-index-stats.py && node scripts/check-docs.mjs && vitepress build"
