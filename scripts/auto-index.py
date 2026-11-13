@@ -77,33 +77,62 @@ def doc_title(path: Path) -> str:
 
 
 def first_paragraph(path: Path) -> str:
-    """提取摘要：优先用文章自带的「摘要」小节，其次首个有效正文段落。
+    """提取摘要：优先用文章自带「摘要」小节里最能概括全篇的一句。
 
-    仅在 --auto-summary 时使用。
+    策略：在「摘要」小节内，优先选含「本文/整理/总结/共/分为/介绍」等
+    概括性词汇的段落（通常在小节末尾），否则取该小节首段。
     """
     try:
         lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
     except OSError:
         return ""
 
-    # 1) 优先找「## 摘要」小节下的首段
+    summary_start = None
     for i, line in enumerate(lines):
-        if re.match(r"^#{1,3}\s*摘要\s*$", line.strip()):
-            for follow in lines[i + 1:]:
-                s = follow.strip()
-                if not s or s.startswith(("#", ">", "|", "```")):
-                    if s.startswith("##"):
-                        break
-                    continue
-                return cleanup(s)[:45]
+        if re.match(r"^\s*#{1,3}\s*摘要\s*$", line):
+            summary_start = i + 1
             break
 
-    # 2) 回退：首个非标题、非引用、非图片的正文行
+    if summary_start is not None:
+        paragraphs = []
+        buf = []
+        for line in lines[summary_start:]:
+            s = line.strip()
+            # 遇到任何标题都必须无条件中断：摘要小节与下一小节之间通常正好
+            # 隔一个空行，此时 buf 已被清空，若要求 buf 非空才 break，
+            # 标题本身就会被当成正文收集进去，进而扫到正文各节取错段落。
+            if re.match(r"^#{1,6}\s", s):
+                break
+            if not s:
+                if buf:
+                    paragraphs.append(" ".join(buf))
+                    buf = []
+                continue
+            if s.startswith(">"):
+                continue  # 跳过引用块
+            buf.append(s)
+        if buf:
+            paragraphs.append(" ".join(buf))
+
+        if paragraphs:
+            keywords = ("本文", "整理", "总结", "共", "分为", "介绍", "阐述")
+            for para in reversed(paragraphs):
+                cleaned = cleanup(para)
+                if any(k in cleaned for k in keywords) and 15 <= len(cleaned):
+                    return first_sentence(cleaned)
+            return first_sentence(cleanup(paragraphs[0]))
+
+    # 回退：首个像自然语言的正文段落（跳过标题/引用/表格/列表/图片/代码注释）
     for line in lines:
         s = line.strip()
-        if not s or s.startswith(("#", ">", "|", "-", "*", "!", "`", "---")):
+        if not s or s.startswith(("#", ">", "|", "-", "*", "+", "!", "`", "---", "//", "<!--")):
             continue
-        return cleanup(s)[:45]
+        # 纯英文短词、URL、代码片段都不适合做摘要
+        if len(s) < 15 or " " not in s and len(s) < 25:
+            continue
+        if re.match(r"^(https?://|www\.)", s):
+            continue
+        return first_sentence(cleanup(s))
     return ""
 
 
@@ -113,6 +142,17 @@ def cleanup(text: str) -> str:
     s = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", s)
     s = re.sub(r"[*_`]", "", s)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def first_sentence(text: str, limit: int = 60) -> str:
+    """取首句，让自动摘要与人工撰写的索引行长度接近。
+
+    首句长度合适（10~limit 字）就用首句，否则硬截断到 limit 字。
+    """
+    m = re.match(r"^(.{10,%d}?[。！？!?])" % limit, text)
+    if m:
+        return m.group(1)
+    return text[:limit]
 
 
 def url_encode(rel: str) -> str:
@@ -132,7 +172,12 @@ def section_of(rel: str) -> str:
 
 
 def insert_into_section(text: str, section_prefix: str, row: str) -> tuple[str, bool]:
-    """把 row 插到指定分区的最后一行表格之后。"""
+    """把 row 插到指定分区「最后一张表的最后一行」之后。
+
+    注意：连续表格行之间不能有空行，否则 Markdown 会把该行当成普通段落。
+    因此正则的尾部空白只允许空格/制表符，绝不能用 \\s（会吞掉换行，
+    导致插入点落到空行之后、表格被截断）。
+    """
     start = text.find(section_prefix)
     if start < 0:
         return text, False
@@ -140,12 +185,21 @@ def insert_into_section(text: str, section_prefix: str, row: str) -> tuple[str, 
     end = nxt if nxt > 0 else len(text)
     block = text[start:end]
 
-    # 找该分区最后一条表格行
-    rows = list(re.finditer(r"^\| \[.*\|\s*$", block, re.M))
+    rows = list(re.finditer(r"^\|.*\|[ \t]*$", block, re.M))
     if not rows:
         return text, False
-    last = rows[-1]
-    insert_at = start + last.end()
+
+    # 从末尾向前找「连续的表格块」：最后一行往上，直到遇到空行或非表格行
+    last_idx = len(rows) - 1
+    first_in_block = last_idx
+    while first_in_block > 0:
+        prev_end = rows[first_in_block - 1].end()
+        gap = block[prev_end:rows[first_in_block].start()]
+        if gap.strip():
+            break
+        first_in_block -= 1
+
+    insert_at = start + rows[last_idx].end()
     return text[:insert_at] + "\n" + row + text[insert_at:], True
 
 

@@ -4,3 +4,6 @@ node_modules/
 .vitepress/.temp/
 .vs/
 *.stackdump
+__pycache__/
+*.pyc
+.idx.html
