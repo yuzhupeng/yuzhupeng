@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { enhanceSidebar } from "./sidebar-auto.mjs";
 
 // GitHub Pages base path (仓库名作为 base)
 const base = process.env.GITHUB_ACTIONS ? "/yuzhupeng/" : "/";
@@ -33,7 +34,7 @@ export default defineConfig({
       { text: "Python", link: "/技术开发/Python环境管理利器Conda" },
     ],
 
-    sidebar: {
+    sidebar: enhanceSidebar({
       "/": [
         {
           text: "📖 个人成长与人生哲学",
@@ -341,7 +342,7 @@ export default defineConfig({
           ],
         },
       ],
-    },
+    }),
 
     socialLinks: [{ icon: "github", link: "https://github.com/yuzhupeng" }],
 

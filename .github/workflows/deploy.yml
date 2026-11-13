@@ -38,6 +38,9 @@ jobs:
       - name: Update index stats
         run: python3 scripts/update-index-stats.py
 
+      - name: Auto-add new docs to index
+        run: python3 scripts/auto-index.py --write
+
       - name: Validate Markdown
         run: npm run docs:check
 
