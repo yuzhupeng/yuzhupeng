@@ -33,23 +33,36 @@ def is_content_doc(path: Path) -> bool:
     return True
 
 
-def last_commit_date() -> str | None:
-    """取仓库最后一次提交日期；git 不可用时返回 None。"""
+def last_update_date(docs: list[Path]) -> str:
+    """取「最近一次内容变更」的日期。
+
+    优先用 git 记录的仓库最后提交日期；但本地新增文件尚未提交时，
+    git 日期会落后于实际内容，所以再与文档的最大修改时间取较大者。
+    只取 mtime 不可靠（CI checkout 会刷新所有文件时间），故两者取 max。
+    """
+    candidates = []
     try:
         out = subprocess.run(
             ["git", "log", "-1", "--format=%ad", "--date=short"],
             cwd=root, capture_output=True, text=True, check=True,
         ).stdout.strip()
-        return out or None
+        if out:
+            candidates.append(out)
     except (subprocess.CalledProcessError, FileNotFoundError):
-        return None
+        pass
+
+    newest_mtime = max((f.stat().st_mtime for f in docs), default=None)
+    if newest_mtime is not None:
+        candidates.append(date.fromtimestamp(newest_mtime).isoformat())
+
+    return max(candidates) if candidates else date.today().isoformat()
 
 
 docs = [f for f in root.rglob("*.md") if is_content_doc(f)]
 count = len(docs)
 
-# 日期优先取 git 最后一次提交（CI 的 checkout 时间戳不含内容语义）
-updated = last_commit_date() or date.today().isoformat()
+# 日期取 git 提交日期与文档最新 mtime 的较大者（CI 环境 mtime 会被 checkout 刷新）
+updated = last_update_date(docs)
 
 content = index_file.read_text(encoding="utf-8")
 new_header = f"> 最后更新：{updated} | 共收录 {count} 篇 Markdown 文档"
