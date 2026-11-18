@@ -42,7 +42,6 @@
 - 🤖 AI 自动代码生成工具链（AI MCP Auto GenCode）&`vibe coding`&`Claude code`
 - 🌐 Agent ReAct / LangGraph / CrewAI
 - 🎮 Prompt Engineering
-- ⚙️ .NET Core 
 - 🐍 Python 高级应用(OCR TensorFlow、PyTorch Pandas、NumPy、Matplotlib)
 - 🎮 游戏逆向工程（Game Reversed Engineering）
 - 🌱 TypeScript
