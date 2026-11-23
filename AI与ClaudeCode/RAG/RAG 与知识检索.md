@@ -169,38 +169,4 @@ AI 思考中...
 
 [Agent 上下文工程](https://www.runoob.com/ai-agent/agent-context-engineering.html "Agent 上下文工程")[](https://www.runoob.com/ai-agent/agent-context-engineering.html)
 
-(adsbygoogle = window.adsbygoogle || \[\]).push({});
-
-.wrapper { /\*text-transform: uppercase; \*/ background: #ececec; color: #555; cursor: pointer; font-family: "Gill Sans", Impact, sans-serif; font-size: 20px; position: relative; text-align: center; width: 200px; -webkit-transform: translateZ(0); /\* webkit flicker fix \*/ -webkit-font-smoothing: antialiased; /\* webkit text rendering fix \*/ } .wrapper .tooltip { white-space: nowrap; font-size: 14px; text-align: left; background: #96b97d; bottom: 100%; color: #fff; display: block; left: -25px; margin-bottom: 15px; opacity: 0; padding: 14px; pointer-events: none; position: absolute; -webkit-transform: translateY(10px); -moz-transform: translateY(10px); -ms-transform: translateY(10px); -o-transform: translateY(10px); transform: translateY(10px); -webkit-transition: all .25s ease-out; -moz-transition: all .25s ease-out; -ms-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out; -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28); -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28); -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28); -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28); box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28); } .tooltip a { color:#fff; } /\* This bridges the gap so you can mouse into the tooltip without it disappearing \*/ .wrapper .tooltip:before { bottom: -20px; content: " "; display: block; height: 20px; left: 0; position: absolute; width: 100%; } /\* CSS Triangles - see Trevor's post \*/ .wrapper .tooltip:after { border-left: solid transparent 10px; border-right: solid transparent 10px; border-top: solid #96b97d 10px; bottom: -10px; content: " "; height: 0; left: 20%; margin-left: -13px; position: absolute; width: 0; } .wrapper .tooltip1 { margin-left: 50px; padding-top: 0px; } /\* .wrapper:hover .tooltip { opacity: 1; pointer-events: auto; -webkit-transform: translateY(0px); -moz-transform: translateY(0px); -ms-transform: translateY(0px); -o-transform: translateY(0px); transform: translateY(0px); } \*/ /\* IE can just show/hide with no transition \*/ .lte8 .wrapper .tooltip { display: none; } .lte8 .wrapper:hover .tooltip { display: block; } 
-
-### 点我分享笔记
-
-[取消](javascript:;)
-
--   [](javascript:; "加粗文字 ( Ctrl + b )")
--   [](javascript:; "插入代码")
--   [](javascript:; "无序列表 ( Ctrl + . )")
--   [](javascript:; "有序列表 ( ctrl + / )")
--   [](javascript:; "插入图片")
-
-写笔记...
-
-  
-
-选择程序语言 BashC++C#CSSErlangLessSassDiffCoffeeScriptHTML,XMLJSONJavaJavaScriptMarkdownObjective CPHPPerlPythonRubySQL
-
-图片地址 
-
-图片描述 
-
-图片尺寸  × [](javascript:; "还原图片尺寸")
-
  
-
-分享笔记
-
--   昵称昵称 (必填)
--   邮箱邮箱 (必填)
--   引用地址引用地址
-
-$(function() { //初始化编辑器 var editor = new Simditor({ textarea: $('#mded'), placeholder: '写笔记...', upload:false, // upload: {url:'/api/comment\_upload\_file.php',params: null,fileKey: 'upload\_file',connectionCount: 1,leaveConfirm: '文件正在上传，您确定离开?'}, defaultImage: 'https://www.runoob.com/images/logo.png', codeLanguages: '', autosave: 'editor-content', toolbar: \[ 'bold','code','ul','ol','image' \] }); editor.on('selectionchanged', function() { $(".code-popover").hide(); }); // 提交数据 $("#share\_code").click(function() { $(".comment-signarea").hide(); $("#commentform").show(); }); $("#user\_add\_note").click(function() { $(".comment-signarea").hide(); $("#commentform").show(); $('html, body').animate({ scrollTop: $("#respond").offset().top }, 200); }); // 提交笔记 var commentform=$('#commentform'); commentform.prepend('<div id="comment-status" style="display:none;" ></div>'); var statusdiv=$('#comment-status'); commentform.submit(function(e){ e.preventDefault(); var noteContent = editor.getValue(); // console.log(noteContent); noteContent = noteContent.replace(/<pre><code>/g,"<pre>"); noteContent = noteContent.replace(/<\\/code><\\/pre>/g,"</pre>"); // 系列化表单数据 var comment\_parent = 0; var is\_user\_logged\_in = $("#is\_user\_logged\_in").val(); var comment\_post\_ID = 30006; var \_wp\_unfiltered\_html\_comment = $("#\_wp\_unfiltered\_html\_comment").val(); var comment = noteContent; var author = $("#author").val(); var url = $("#url").val(); var email = $("#email").val(); if(isBlank(author) && is\_user\_logged\_in==0) { statusdiv.html('<p class="ajax-error">请输入昵称！</p>').show(); } else if(isBlank(email) && is\_user\_logged\_in==0) { statusdiv.html('<p class="ajax-error">请输入邮箱！</p>').show(); } else { // var formdata=commentform.serialize() + "&comment=" + noteContent ; // 添加状态信息 statusdiv.html('<p>Processing...</p>').show(); // 获取表单提交地址 var formurl=commentform.attr('action'); // 异步提交 $.ajax({ type: 'post', url: formurl, dataType:'json', data: {"comment\_parent":comment\_parent,"comment\_post\_ID":comment\_post\_ID, "\_wp\_unfiltered\_html\_comment":\_wp\_unfiltered\_html\_comment,"comment":comment,"url":url, "email":email,"author":author}, error: function(XMLHttpRequest, textStatus, errorThrown){ statusdiv.html('<p class="ajax-error" >数据不完整或表单提交太快了！</p>').show(); }, success: function(data, textStatus){ if(data.errorno=="0") { $("#submit").prop('disabled', true); statusdiv.html('<p class="ajax-success" >笔记已提交审核，感谢分享笔记！</p>').show(); alert('笔记已提交审核，感谢分享笔记！'); }else{ statusdiv.html('<p class="ajax-error" >'+data.msg+'</p>').show(); } commentform.find('textarea\[name=comment\]').val(''); } }); setTimeout(function(){ $("#submit").prop('disabled', false); }, 10\*1000); } return false; }); $(".comt-author").click(function() { href = $(this).children("a").attr("href"); if(href.indexOf("/note/")!=-1) { var win = window.open(href, '\_blank'); win.focus(); } }); $(".comt-meta span").hover(function(){ $(this).children(".tooltip").css({ "opacity": 1, "pointer-events": "auto"}); },function(){ $(this).children(".tooltip").removeAttr("style"); }); /\* $(".wrapper i").hover(function(){ $(this).siblings(".tooltip").css({ "opacity": 1, "pointer-events": "auto"}); },function(){ $(this).siblings(".tooltip").css({ "opacity": 0, "pointer-events": "auto"}); }); \*/ //Upvote.create('runoobvote-id', {callback: vote\_callback}); var ajaxurl = 'https://www.runoob.com/wp-admin/admin-ajax.php'; var callback = function(data) { //console.log($('#runoobvote-id').upvote('upvoted')); //console.log($('#runoobvote-id').upvote('downvoted')); //console.log(data); \_vote\_action = data.action; id\_arr = data.id.split('-'); um\_id= id\_arr\[2\]; //console.log(um\_id); var re = /^\[1-9\]+/; if (re.test(um\_id)) { var ajax\_data = { \_vote\_action: \_vote\_action, action: "pinglun\_zan", um\_id: um\_id, um\_action: "ding" }; //console.log(ajax\_data); $.post(ajaxurl,ajax\_data,function(status){ //if(status.vote\_num>999) { // \_voteHtml = '<span style="display: block; text-align: center;font-size: 20px; color: #6a737c; margin: 8px 0;">'+kFormatter(status.vote\_num) +'</span>'; // $("#runoobvote-id-" + um\_id + " .count").hide().after(\_voteHtml); //} }); } }; if($('#comments').length && $('.upvotejs').length){ $('.upvotejs').upvote({id: 30006, callback: callback}); $.post(ajaxurl,{"action":"pinglun\_zan","postid":30006},function(data){ $(data).each(function(key,value) { $("#runoobvote-id-" + value.commid + " .upvote").addClass(value.upvotejs\_class); $("#runoobvote-id-" + value.commid + " .downvote").addClass(value.downvote\_class); $("#runoobvote-id-" + value.commid + " .count").text(value.upvote\_count); }) },'json'); } }); function isBlank(str) { return (!str || /^\\s\*$/.test(str)); } function kFormatter(num) { // return num; return Math.abs(num) > 999 ? Math.sign(num)\*((Math.abs(num)/1000).toFixed(1)) + 'k' : Math.sign(num)\*Math.abs(num) }
