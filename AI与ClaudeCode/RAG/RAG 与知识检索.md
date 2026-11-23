@@ -1,10 +1,4 @@
-[](https://www.runoob.com/ai-agent/vector-database.html)[向量数据库](https://www.runoob.com/ai-agent/vector-database.html "向量数据库")
-
-[Agent 上下文工程](https://www.runoob.com/ai-agent/agent-context-engineering.html "Agent 上下文工程")[](https://www.runoob.com/ai-agent/agent-context-engineering.html)
-
-@media (max-width:768px){ .adsbygoogle { display:none !important; } }
-
-(adsbygoogle = window.adsbygoogle || \[\]).push({});
+ 
 
 # RAG 与知识检索
 
