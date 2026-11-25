@@ -43,8 +43,8 @@
 - 🌐 Agent ReAct / LangGraph / CrewAI
 - 🎮 Prompt Engineering
 - 🐍 Python 高级应用(OCR TensorFlow、PyTorch Pandas、NumPy、Matplotlib)
-- 🎮 游戏逆向工程（Game Reversed Engineering）
-- 🌱 TypeScript
+- 🎮 REA逆向工程（ Reversed Engineering）
+- 🌱 大模型工程知识体系 Agent 架构 × 训练·微调·部署
 ---
 
 
