@@ -15,7 +15,7 @@
 
 
 
-## 👋 Hi, I'm **fishyue** | 
+## 👋 Hi, I'm **fishyue** 
 
 🇨🇳 Full-stack Engineer | Digital Factory Evangelist  
 🎯 Software Developer from China |  
